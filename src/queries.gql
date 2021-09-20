@@ -1,0 +1,40 @@
+mutation {
+  signUp(
+    email: "kundan1@gmail.com"
+    username: "kundan1"
+    name: "Kundan1"
+    password: "123@Secret"
+  ) {
+    id
+  }
+}
+
+mutation {
+  signIn(email: "kundan1@gmail.com", password: "123@Secret") {
+    id
+  }
+}
+
+mutation {
+  signOut
+}
+
+{
+  me {
+    id
+    name
+    email
+  }
+}
+
+{
+  users {
+    id
+  }
+}
+
+{
+  user(id: "6086ddab6a223f36e81c1527") {
+    id
+  }
+}
